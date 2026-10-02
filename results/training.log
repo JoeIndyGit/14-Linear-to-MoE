@@ -1,0 +1,557 @@
+
+=== Split 2026 / seed 42 ===
+linear_pretrain    epoch=  0 train_CE=2.298791 val_CE=2.297851
+linear_pretrain    epoch= 20 train_CE=0.175460 val_CE=0.230187
+scratch_pretrain   epoch=  0 train_CE=2.298581 val_CE=2.299035
+scratch_pretrain   epoch= 20 train_CE=0.111385 val_CE=0.182659
+linear_continue    epoch=  0 train_CE=0.175460 val_CE=0.230187
+linear_continue    epoch= 20 train_CE=0.098942 val_CE=0.168543
+linear_continue    epoch= 40 train_CE=0.070999 val_CE=0.150209
+linear_continue    epoch= 60 train_CE=0.054835 val_CE=0.139758
+linear_continue    epoch= 80 train_CE=0.044052 val_CE=0.132828
+moe_continue       epoch=  0 train_CE=0.175460 val_CE=0.230187
+moe_continue       epoch= 20 train_CE=0.056512 val_CE=0.124725
+moe_continue       epoch= 40 train_CE=0.026481 val_CE=0.100528
+moe_continue       epoch= 60 train_CE=0.015403 val_CE=0.088007
+moe_continue       epoch= 80 train_CE=0.010105 val_CE=0.086819
+linear_mac_matched epoch=  0 train_CE=0.175460 val_CE=0.230187
+linear_mac_matched epoch= 20 train_CE=0.098942 val_CE=0.168543
+linear_mac_matched epoch= 40 train_CE=0.070999 val_CE=0.150209
+linear_mac_matched epoch= 60 train_CE=0.054835 val_CE=0.139758
+linear_mac_matched epoch= 80 train_CE=0.044052 val_CE=0.132828
+linear_mac_matched epoch=100 train_CE=0.036347 val_CE=0.128984
+linear_mac_matched epoch=120 train_CE=0.030646 val_CE=0.128127
+linear_mac_matched epoch=140 train_CE=0.026153 val_CE=0.125321
+linear_mac_matched epoch=160 train_CE=0.022551 val_CE=0.124027
+linear_mac_matched epoch=180 train_CE=0.019570 val_CE=0.125365
+linear_mac_matched epoch=192 train_CE=0.018036 val_CE=0.125911
+moe_no_balance     epoch=  0 train_CE=0.175460 val_CE=0.230187
+moe_no_balance     epoch= 20 train_CE=0.061676 val_CE=0.136795
+moe_no_balance     epoch= 40 train_CE=0.030720 val_CE=0.110473
+moe_no_balance     epoch= 60 train_CE=0.018676 val_CE=0.089977
+moe_no_balance     epoch= 80 train_CE=0.012334 val_CE=0.089194
+scratch_continue   epoch=  0 train_CE=0.111385 val_CE=0.182659
+scratch_continue   epoch= 20 train_CE=0.040602 val_CE=0.122363
+scratch_continue   epoch= 40 train_CE=0.024740 val_CE=0.113165
+scratch_continue   epoch= 60 train_CE=0.012959 val_CE=0.105105
+scratch_continue   epoch= 80 train_CE=0.008701 val_CE=0.110491
+
+=== Split 2026 / seed 43 ===
+linear_pretrain    epoch=  0 train_CE=2.297373 val_CE=2.296684
+linear_pretrain    epoch= 20 train_CE=0.175278 val_CE=0.230070
+scratch_pretrain   epoch=  0 train_CE=2.304422 val_CE=2.304811
+scratch_pretrain   epoch= 20 train_CE=0.113829 val_CE=0.196132
+linear_continue    epoch=  0 train_CE=0.175278 val_CE=0.230070
+linear_continue    epoch= 20 train_CE=0.098130 val_CE=0.168324
+linear_continue    epoch= 40 train_CE=0.070606 val_CE=0.147927
+linear_continue    epoch= 60 train_CE=0.054570 val_CE=0.139081
+linear_continue    epoch= 80 train_CE=0.043900 val_CE=0.130702
+moe_continue       epoch=  0 train_CE=0.175278 val_CE=0.230070
+moe_continue       epoch= 20 train_CE=0.057185 val_CE=0.141105
+moe_continue       epoch= 40 train_CE=0.027055 val_CE=0.106389
+moe_continue       epoch= 60 train_CE=0.016563 val_CE=0.106342
+moe_continue       epoch= 80 train_CE=0.010870 val_CE=0.102713
+linear_mac_matched epoch=  0 train_CE=0.175278 val_CE=0.230070
+linear_mac_matched epoch= 20 train_CE=0.098130 val_CE=0.168324
+linear_mac_matched epoch= 40 train_CE=0.070606 val_CE=0.147927
+linear_mac_matched epoch= 60 train_CE=0.054570 val_CE=0.139081
+linear_mac_matched epoch= 80 train_CE=0.043900 val_CE=0.130702
+linear_mac_matched epoch=100 train_CE=0.036306 val_CE=0.130992
+linear_mac_matched epoch=120 train_CE=0.030527 val_CE=0.125536
+linear_mac_matched epoch=140 train_CE=0.026068 val_CE=0.125278
+linear_mac_matched epoch=160 train_CE=0.022546 val_CE=0.125630
+linear_mac_matched epoch=180 train_CE=0.019515 val_CE=0.122393
+linear_mac_matched epoch=192 train_CE=0.017978 val_CE=0.123953
+moe_no_balance     epoch=  0 train_CE=0.175278 val_CE=0.230070
+moe_no_balance     epoch= 20 train_CE=0.063826 val_CE=0.140287
+moe_no_balance     epoch= 40 train_CE=0.030784 val_CE=0.109209
+moe_no_balance     epoch= 60 train_CE=0.017082 val_CE=0.100149
+moe_no_balance     epoch= 80 train_CE=0.011036 val_CE=0.101521
+scratch_continue   epoch=  0 train_CE=0.113829 val_CE=0.196132
+scratch_continue   epoch= 20 train_CE=0.048773 val_CE=0.123713
+scratch_continue   epoch= 40 train_CE=0.028292 val_CE=0.139899
+scratch_continue   epoch= 60 train_CE=0.019727 val_CE=0.141381
+scratch_continue   epoch= 80 train_CE=0.011499 val_CE=0.137381
+
+=== Split 2026 / seed 44 ===
+linear_pretrain    epoch=  0 train_CE=2.307533 val_CE=2.306648
+linear_pretrain    epoch= 20 train_CE=0.174735 val_CE=0.227821
+scratch_pretrain   epoch=  0 train_CE=2.299703 val_CE=2.302004
+scratch_pretrain   epoch= 20 train_CE=0.108988 val_CE=0.194360
+linear_continue    epoch=  0 train_CE=0.174735 val_CE=0.227821
+linear_continue    epoch= 20 train_CE=0.098702 val_CE=0.167042
+linear_continue    epoch= 40 train_CE=0.070954 val_CE=0.147856
+linear_continue    epoch= 60 train_CE=0.054813 val_CE=0.139610
+linear_continue    epoch= 80 train_CE=0.044020 val_CE=0.131891
+moe_continue       epoch=  0 train_CE=0.174735 val_CE=0.227821
+moe_continue       epoch= 20 train_CE=0.061257 val_CE=0.128548
+moe_continue       epoch= 40 train_CE=0.030136 val_CE=0.106312
+moe_continue       epoch= 60 train_CE=0.018326 val_CE=0.100500
+moe_continue       epoch= 80 train_CE=0.011624 val_CE=0.097395
+linear_mac_matched epoch=  0 train_CE=0.174735 val_CE=0.227821
+linear_mac_matched epoch= 20 train_CE=0.098702 val_CE=0.167042
+linear_mac_matched epoch= 40 train_CE=0.070954 val_CE=0.147856
+linear_mac_matched epoch= 60 train_CE=0.054813 val_CE=0.139610
+linear_mac_matched epoch= 80 train_CE=0.044020 val_CE=0.131891
+linear_mac_matched epoch=100 train_CE=0.036346 val_CE=0.127840
+linear_mac_matched epoch=120 train_CE=0.030600 val_CE=0.126721
+linear_mac_matched epoch=140 train_CE=0.026212 val_CE=0.127574
+linear_mac_matched epoch=160 train_CE=0.022478 val_CE=0.123823
+linear_mac_matched epoch=180 train_CE=0.019550 val_CE=0.125899
+linear_mac_matched epoch=192 train_CE=0.017985 val_CE=0.125191
+moe_no_balance     epoch=  0 train_CE=0.174735 val_CE=0.227821
+moe_no_balance     epoch= 20 train_CE=0.062323 val_CE=0.135886
+moe_no_balance     epoch= 40 train_CE=0.032580 val_CE=0.117414
+moe_no_balance     epoch= 60 train_CE=0.019496 val_CE=0.110800
+moe_no_balance     epoch= 80 train_CE=0.012736 val_CE=0.109548
+scratch_continue   epoch=  0 train_CE=0.108988 val_CE=0.194360
+scratch_continue   epoch= 20 train_CE=0.045016 val_CE=0.197516
+scratch_continue   epoch= 40 train_CE=0.023133 val_CE=0.158225
+scratch_continue   epoch= 60 train_CE=0.014955 val_CE=0.215798
+scratch_continue   epoch= 80 train_CE=0.009784 val_CE=0.193299
+
+=== Split 2026 / seed 45 ===
+linear_pretrain    epoch=  0 train_CE=2.306819 val_CE=2.309011
+linear_pretrain    epoch= 20 train_CE=0.172389 val_CE=0.227766
+scratch_pretrain   epoch=  0 train_CE=2.300090 val_CE=2.300122
+scratch_pretrain   epoch= 20 train_CE=0.108149 val_CE=0.179475
+linear_continue    epoch=  0 train_CE=0.172389 val_CE=0.227766
+linear_continue    epoch= 20 train_CE=0.098518 val_CE=0.168105
+linear_continue    epoch= 40 train_CE=0.070940 val_CE=0.147337
+linear_continue    epoch= 60 train_CE=0.054946 val_CE=0.140575
+linear_continue    epoch= 80 train_CE=0.044175 val_CE=0.135412
+moe_continue       epoch=  0 train_CE=0.172389 val_CE=0.227766
+moe_continue       epoch= 20 train_CE=0.058819 val_CE=0.127287
+moe_continue       epoch= 40 train_CE=0.028461 val_CE=0.094595
+moe_continue       epoch= 60 train_CE=0.017694 val_CE=0.083391
+moe_continue       epoch= 80 train_CE=0.011555 val_CE=0.079158
+linear_mac_matched epoch=  0 train_CE=0.172389 val_CE=0.227766
+linear_mac_matched epoch= 20 train_CE=0.098518 val_CE=0.168105
+linear_mac_matched epoch= 40 train_CE=0.070940 val_CE=0.147337
+linear_mac_matched epoch= 60 train_CE=0.054946 val_CE=0.140575
+linear_mac_matched epoch= 80 train_CE=0.044175 val_CE=0.135412
+linear_mac_matched epoch=100 train_CE=0.036475 val_CE=0.128764
+linear_mac_matched epoch=120 train_CE=0.030777 val_CE=0.125147
+linear_mac_matched epoch=140 train_CE=0.026271 val_CE=0.124499
+linear_mac_matched epoch=160 train_CE=0.022588 val_CE=0.126027
+linear_mac_matched epoch=180 train_CE=0.019622 val_CE=0.123827
+linear_mac_matched epoch=192 train_CE=0.018084 val_CE=0.123760
+moe_no_balance     epoch=  0 train_CE=0.172389 val_CE=0.227766
+moe_no_balance     epoch= 20 train_CE=0.058498 val_CE=0.132054
+moe_no_balance     epoch= 40 train_CE=0.028422 val_CE=0.093845
+moe_no_balance     epoch= 60 train_CE=0.016611 val_CE=0.090757
+moe_no_balance     epoch= 80 train_CE=0.010671 val_CE=0.088919
+scratch_continue   epoch=  0 train_CE=0.108149 val_CE=0.179475
+scratch_continue   epoch= 20 train_CE=0.042003 val_CE=0.154288
+scratch_continue   epoch= 40 train_CE=0.026031 val_CE=0.116021
+scratch_continue   epoch= 60 train_CE=0.016241 val_CE=0.119558
+scratch_continue   epoch= 80 train_CE=0.010345 val_CE=0.123052
+
+=== Split 2026 / seed 46 ===
+linear_pretrain    epoch=  0 train_CE=2.310176 val_CE=2.309975
+linear_pretrain    epoch= 20 train_CE=0.173828 val_CE=0.228624
+scratch_pretrain   epoch=  0 train_CE=2.304637 val_CE=2.305475
+scratch_pretrain   epoch= 20 train_CE=0.100725 val_CE=0.174908
+linear_continue    epoch=  0 train_CE=0.173828 val_CE=0.228624
+linear_continue    epoch= 20 train_CE=0.098696 val_CE=0.167503
+linear_continue    epoch= 40 train_CE=0.070888 val_CE=0.150129
+linear_continue    epoch= 60 train_CE=0.054791 val_CE=0.136553
+linear_continue    epoch= 80 train_CE=0.044192 val_CE=0.135671
+moe_continue       epoch=  0 train_CE=0.173828 val_CE=0.228624
+moe_continue       epoch= 20 train_CE=0.056236 val_CE=0.129342
+moe_continue       epoch= 40 train_CE=0.028104 val_CE=0.099226
+moe_continue       epoch= 60 train_CE=0.016454 val_CE=0.083947
+moe_continue       epoch= 80 train_CE=0.010954 val_CE=0.078941
+linear_mac_matched epoch=  0 train_CE=0.173828 val_CE=0.228624
+linear_mac_matched epoch= 20 train_CE=0.098696 val_CE=0.167503
+linear_mac_matched epoch= 40 train_CE=0.070888 val_CE=0.150129
+linear_mac_matched epoch= 60 train_CE=0.054791 val_CE=0.136553
+linear_mac_matched epoch= 80 train_CE=0.044192 val_CE=0.135671
+linear_mac_matched epoch=100 train_CE=0.036488 val_CE=0.129908
+linear_mac_matched epoch=120 train_CE=0.030737 val_CE=0.124850
+linear_mac_matched epoch=140 train_CE=0.026386 val_CE=0.123826
+linear_mac_matched epoch=160 train_CE=0.022637 val_CE=0.126098
+linear_mac_matched epoch=180 train_CE=0.019624 val_CE=0.123351
+linear_mac_matched epoch=192 train_CE=0.018072 val_CE=0.125293
+moe_no_balance     epoch=  0 train_CE=0.173828 val_CE=0.228624
+moe_no_balance     epoch= 20 train_CE=0.057066 val_CE=0.130035
+moe_no_balance     epoch= 40 train_CE=0.026417 val_CE=0.097397
+moe_no_balance     epoch= 60 train_CE=0.016000 val_CE=0.090268
+moe_no_balance     epoch= 80 train_CE=0.009702 val_CE=0.088082
+scratch_continue   epoch=  0 train_CE=0.100725 val_CE=0.174908
+scratch_continue   epoch= 20 train_CE=0.038673 val_CE=0.101197
+scratch_continue   epoch= 40 train_CE=0.019145 val_CE=0.118459
+scratch_continue   epoch= 60 train_CE=0.011829 val_CE=0.112883
+scratch_continue   epoch= 80 train_CE=0.008835 val_CE=0.118736
+
+=== Split 2027 / seed 42 ===
+linear_pretrain    epoch=  0 train_CE=2.298611 val_CE=2.298466
+linear_pretrain    epoch= 20 train_CE=0.161275 val_CE=0.249191
+scratch_pretrain   epoch=  0 train_CE=2.298645 val_CE=2.298521
+scratch_pretrain   epoch= 20 train_CE=0.104344 val_CE=0.197422
+linear_continue    epoch=  0 train_CE=0.161275 val_CE=0.249191
+linear_continue    epoch= 20 train_CE=0.088742 val_CE=0.186046
+linear_continue    epoch= 40 train_CE=0.063554 val_CE=0.168281
+linear_continue    epoch= 60 train_CE=0.049518 val_CE=0.160631
+linear_continue    epoch= 80 train_CE=0.040418 val_CE=0.158279
+moe_continue       epoch=  0 train_CE=0.161275 val_CE=0.249191
+moe_continue       epoch= 20 train_CE=0.059191 val_CE=0.163916
+moe_continue       epoch= 40 train_CE=0.029390 val_CE=0.144928
+moe_continue       epoch= 60 train_CE=0.018298 val_CE=0.148501
+moe_continue       epoch= 80 train_CE=0.012428 val_CE=0.135508
+linear_mac_matched epoch=  0 train_CE=0.161275 val_CE=0.249191
+linear_mac_matched epoch= 20 train_CE=0.088742 val_CE=0.186046
+linear_mac_matched epoch= 40 train_CE=0.063554 val_CE=0.168281
+linear_mac_matched epoch= 60 train_CE=0.049518 val_CE=0.160631
+linear_mac_matched epoch= 80 train_CE=0.040418 val_CE=0.158279
+linear_mac_matched epoch=100 train_CE=0.033846 val_CE=0.157604
+linear_mac_matched epoch=120 train_CE=0.028907 val_CE=0.158071
+linear_mac_matched epoch=140 train_CE=0.025074 val_CE=0.161881
+linear_mac_matched epoch=160 train_CE=0.021818 val_CE=0.162522
+linear_mac_matched epoch=180 train_CE=0.019259 val_CE=0.164515
+linear_mac_matched epoch=192 train_CE=0.017894 val_CE=0.165170
+moe_no_balance     epoch=  0 train_CE=0.161275 val_CE=0.249191
+moe_no_balance     epoch= 20 train_CE=0.060567 val_CE=0.159959
+moe_no_balance     epoch= 40 train_CE=0.031940 val_CE=0.155640
+moe_no_balance     epoch= 60 train_CE=0.020860 val_CE=0.157255
+moe_no_balance     epoch= 80 train_CE=0.014613 val_CE=0.159589
+scratch_continue   epoch=  0 train_CE=0.104344 val_CE=0.197422
+scratch_continue   epoch= 20 train_CE=0.038266 val_CE=0.147480
+scratch_continue   epoch= 40 train_CE=0.023425 val_CE=0.156800
+scratch_continue   epoch= 60 train_CE=0.014401 val_CE=0.151334
+scratch_continue   epoch= 80 train_CE=0.012173 val_CE=0.147455
+
+=== Split 2027 / seed 43 ===
+linear_pretrain    epoch=  0 train_CE=2.297355 val_CE=2.295559
+linear_pretrain    epoch= 20 train_CE=0.161952 val_CE=0.250376
+scratch_pretrain   epoch=  0 train_CE=2.304261 val_CE=2.304149
+scratch_pretrain   epoch= 20 train_CE=0.111926 val_CE=0.200554
+linear_continue    epoch=  0 train_CE=0.161952 val_CE=0.250376
+linear_continue    epoch= 20 train_CE=0.089038 val_CE=0.187213
+linear_continue    epoch= 40 train_CE=0.063817 val_CE=0.170614
+linear_continue    epoch= 60 train_CE=0.049772 val_CE=0.162412
+linear_continue    epoch= 80 train_CE=0.040497 val_CE=0.160363
+moe_continue       epoch=  0 train_CE=0.161952 val_CE=0.250376
+moe_continue       epoch= 20 train_CE=0.055573 val_CE=0.162201
+moe_continue       epoch= 40 train_CE=0.027842 val_CE=0.149626
+moe_continue       epoch= 60 train_CE=0.016124 val_CE=0.153133
+moe_continue       epoch= 80 train_CE=0.009983 val_CE=0.152750
+linear_mac_matched epoch=  0 train_CE=0.161952 val_CE=0.250376
+linear_mac_matched epoch= 20 train_CE=0.089038 val_CE=0.187213
+linear_mac_matched epoch= 40 train_CE=0.063817 val_CE=0.170614
+linear_mac_matched epoch= 60 train_CE=0.049772 val_CE=0.162412
+linear_mac_matched epoch= 80 train_CE=0.040497 val_CE=0.160363
+linear_mac_matched epoch=100 train_CE=0.033884 val_CE=0.159192
+linear_mac_matched epoch=120 train_CE=0.028946 val_CE=0.159429
+linear_mac_matched epoch=140 train_CE=0.024988 val_CE=0.161709
+linear_mac_matched epoch=160 train_CE=0.021921 val_CE=0.161769
+linear_mac_matched epoch=180 train_CE=0.019233 val_CE=0.165338
+linear_mac_matched epoch=192 train_CE=0.017834 val_CE=0.167322
+moe_no_balance     epoch=  0 train_CE=0.161952 val_CE=0.250376
+moe_no_balance     epoch= 20 train_CE=0.061458 val_CE=0.163425
+moe_no_balance     epoch= 40 train_CE=0.029619 val_CE=0.136910
+moe_no_balance     epoch= 60 train_CE=0.018415 val_CE=0.127031
+moe_no_balance     epoch= 80 train_CE=0.011624 val_CE=0.126047
+scratch_continue   epoch=  0 train_CE=0.111926 val_CE=0.200554
+scratch_continue   epoch= 20 train_CE=0.056909 val_CE=0.149302
+scratch_continue   epoch= 40 train_CE=0.028821 val_CE=0.177582
+scratch_continue   epoch= 60 train_CE=0.028865 val_CE=0.189231
+scratch_continue   epoch= 80 train_CE=0.013287 val_CE=0.153579
+
+=== Split 2027 / seed 44 ===
+linear_pretrain    epoch=  0 train_CE=2.307436 val_CE=2.306999
+linear_pretrain    epoch= 20 train_CE=0.161577 val_CE=0.249986
+scratch_pretrain   epoch=  0 train_CE=2.299359 val_CE=2.300397
+scratch_pretrain   epoch= 20 train_CE=0.108325 val_CE=0.187827
+linear_continue    epoch=  0 train_CE=0.161577 val_CE=0.249986
+linear_continue    epoch= 20 train_CE=0.088974 val_CE=0.186504
+linear_continue    epoch= 40 train_CE=0.063763 val_CE=0.170194
+linear_continue    epoch= 60 train_CE=0.049763 val_CE=0.161872
+linear_continue    epoch= 80 train_CE=0.040548 val_CE=0.160298
+moe_continue       epoch=  0 train_CE=0.161577 val_CE=0.249986
+moe_continue       epoch= 20 train_CE=0.060058 val_CE=0.155679
+moe_continue       epoch= 40 train_CE=0.031069 val_CE=0.141703
+moe_continue       epoch= 60 train_CE=0.021104 val_CE=0.134992
+moe_continue       epoch= 80 train_CE=0.015014 val_CE=0.136234
+linear_mac_matched epoch=  0 train_CE=0.161577 val_CE=0.249986
+linear_mac_matched epoch= 20 train_CE=0.088974 val_CE=0.186504
+linear_mac_matched epoch= 40 train_CE=0.063763 val_CE=0.170194
+linear_mac_matched epoch= 60 train_CE=0.049763 val_CE=0.161872
+linear_mac_matched epoch= 80 train_CE=0.040548 val_CE=0.160298
+linear_mac_matched epoch=100 train_CE=0.033978 val_CE=0.159583
+linear_mac_matched epoch=120 train_CE=0.029053 val_CE=0.160497
+linear_mac_matched epoch=140 train_CE=0.025115 val_CE=0.161545
+linear_mac_matched epoch=160 train_CE=0.022037 val_CE=0.162223
+linear_mac_matched epoch=180 train_CE=0.019388 val_CE=0.166720
+linear_mac_matched epoch=192 train_CE=0.017958 val_CE=0.166890
+moe_no_balance     epoch=  0 train_CE=0.161577 val_CE=0.249986
+moe_no_balance     epoch= 20 train_CE=0.059914 val_CE=0.151159
+moe_no_balance     epoch= 40 train_CE=0.034069 val_CE=0.135107
+moe_no_balance     epoch= 60 train_CE=0.023007 val_CE=0.138682
+moe_no_balance     epoch= 80 train_CE=0.014598 val_CE=0.148502
+scratch_continue   epoch=  0 train_CE=0.108325 val_CE=0.187827
+scratch_continue   epoch= 20 train_CE=0.043613 val_CE=0.139967
+scratch_continue   epoch= 40 train_CE=0.025098 val_CE=0.143837
+scratch_continue   epoch= 60 train_CE=0.020919 val_CE=0.119272
+scratch_continue   epoch= 80 train_CE=0.011318 val_CE=0.116651
+
+=== Split 2027 / seed 45 ===
+linear_pretrain    epoch=  0 train_CE=2.307427 val_CE=2.308210
+linear_pretrain    epoch= 20 train_CE=0.163016 val_CE=0.251260
+scratch_pretrain   epoch=  0 train_CE=2.299933 val_CE=2.301167
+scratch_pretrain   epoch= 20 train_CE=0.109729 val_CE=0.195351
+linear_continue    epoch=  0 train_CE=0.163016 val_CE=0.251260
+linear_continue    epoch= 20 train_CE=0.089566 val_CE=0.188498
+linear_continue    epoch= 40 train_CE=0.064050 val_CE=0.169261
+linear_continue    epoch= 60 train_CE=0.049715 val_CE=0.162976
+linear_continue    epoch= 80 train_CE=0.040460 val_CE=0.160599
+moe_continue       epoch=  0 train_CE=0.163016 val_CE=0.251260
+moe_continue       epoch= 20 train_CE=0.061228 val_CE=0.156788
+moe_continue       epoch= 40 train_CE=0.031911 val_CE=0.130752
+moe_continue       epoch= 60 train_CE=0.019008 val_CE=0.122758
+moe_continue       epoch= 80 train_CE=0.012064 val_CE=0.120746
+linear_mac_matched epoch=  0 train_CE=0.163016 val_CE=0.251260
+linear_mac_matched epoch= 20 train_CE=0.089566 val_CE=0.188498
+linear_mac_matched epoch= 40 train_CE=0.064050 val_CE=0.169261
+linear_mac_matched epoch= 60 train_CE=0.049715 val_CE=0.162976
+linear_mac_matched epoch= 80 train_CE=0.040460 val_CE=0.160599
+linear_mac_matched epoch=100 train_CE=0.033899 val_CE=0.158819
+linear_mac_matched epoch=120 train_CE=0.028957 val_CE=0.160933
+linear_mac_matched epoch=140 train_CE=0.025092 val_CE=0.160538
+linear_mac_matched epoch=160 train_CE=0.021887 val_CE=0.163764
+linear_mac_matched epoch=180 train_CE=0.019303 val_CE=0.165886
+linear_mac_matched epoch=192 train_CE=0.017902 val_CE=0.166939
+moe_no_balance     epoch=  0 train_CE=0.163016 val_CE=0.251260
+moe_no_balance     epoch= 20 train_CE=0.058794 val_CE=0.143796
+moe_no_balance     epoch= 40 train_CE=0.030705 val_CE=0.122760
+moe_no_balance     epoch= 60 train_CE=0.019815 val_CE=0.118834
+moe_no_balance     epoch= 80 train_CE=0.014645 val_CE=0.110681
+scratch_continue   epoch=  0 train_CE=0.109729 val_CE=0.195351
+scratch_continue   epoch= 20 train_CE=0.046409 val_CE=0.144399
+scratch_continue   epoch= 40 train_CE=0.027917 val_CE=0.149519
+scratch_continue   epoch= 60 train_CE=0.016968 val_CE=0.170054
+scratch_continue   epoch= 80 train_CE=0.017140 val_CE=0.183718
+
+=== Split 2027 / seed 46 ===
+linear_pretrain    epoch=  0 train_CE=2.310208 val_CE=2.309100
+linear_pretrain    epoch= 20 train_CE=0.160964 val_CE=0.247578
+scratch_pretrain   epoch=  0 train_CE=2.304979 val_CE=2.304907
+scratch_pretrain   epoch= 20 train_CE=0.091768 val_CE=0.184886
+linear_continue    epoch=  0 train_CE=0.160964 val_CE=0.247578
+linear_continue    epoch= 20 train_CE=0.088209 val_CE=0.184990
+linear_continue    epoch= 40 train_CE=0.063160 val_CE=0.168566
+linear_continue    epoch= 60 train_CE=0.049325 val_CE=0.161070
+linear_continue    epoch= 80 train_CE=0.040135 val_CE=0.160050
+moe_continue       epoch=  0 train_CE=0.160964 val_CE=0.247578
+moe_continue       epoch= 20 train_CE=0.057829 val_CE=0.140396
+moe_continue       epoch= 40 train_CE=0.028006 val_CE=0.117231
+moe_continue       epoch= 60 train_CE=0.019097 val_CE=0.116690
+moe_continue       epoch= 80 train_CE=0.011749 val_CE=0.111813
+linear_mac_matched epoch=  0 train_CE=0.160964 val_CE=0.247578
+linear_mac_matched epoch= 20 train_CE=0.088209 val_CE=0.184990
+linear_mac_matched epoch= 40 train_CE=0.063160 val_CE=0.168566
+linear_mac_matched epoch= 60 train_CE=0.049325 val_CE=0.161070
+linear_mac_matched epoch= 80 train_CE=0.040135 val_CE=0.160050
+linear_mac_matched epoch=100 train_CE=0.033723 val_CE=0.160039
+linear_mac_matched epoch=120 train_CE=0.028754 val_CE=0.158961
+linear_mac_matched epoch=140 train_CE=0.024813 val_CE=0.161307
+linear_mac_matched epoch=160 train_CE=0.021698 val_CE=0.164203
+linear_mac_matched epoch=180 train_CE=0.019202 val_CE=0.162369
+linear_mac_matched epoch=192 train_CE=0.017745 val_CE=0.166015
+moe_no_balance     epoch=  0 train_CE=0.160964 val_CE=0.247578
+moe_no_balance     epoch= 20 train_CE=0.059276 val_CE=0.160273
+moe_no_balance     epoch= 40 train_CE=0.030608 val_CE=0.137584
+moe_no_balance     epoch= 60 train_CE=0.018828 val_CE=0.136795
+moe_no_balance     epoch= 80 train_CE=0.012216 val_CE=0.131300
+scratch_continue   epoch=  0 train_CE=0.091768 val_CE=0.184886
+scratch_continue   epoch= 20 train_CE=0.039623 val_CE=0.146757
+scratch_continue   epoch= 40 train_CE=0.026006 val_CE=0.153233
+scratch_continue   epoch= 60 train_CE=0.018659 val_CE=0.127639
+scratch_continue   epoch= 80 train_CE=0.011104 val_CE=0.127679
+
+=== Split 2028 / seed 42 ===
+linear_pretrain    epoch=  0 train_CE=2.297813 val_CE=2.300188
+linear_pretrain    epoch= 20 train_CE=0.180987 val_CE=0.189197
+scratch_pretrain   epoch=  0 train_CE=2.299060 val_CE=2.297024
+scratch_pretrain   epoch= 20 train_CE=0.110946 val_CE=0.143745
+linear_continue    epoch=  0 train_CE=0.180987 val_CE=0.189197
+linear_continue    epoch= 20 train_CE=0.106209 val_CE=0.134865
+linear_continue    epoch= 40 train_CE=0.078996 val_CE=0.118390
+linear_continue    epoch= 60 train_CE=0.063118 val_CE=0.108952
+linear_continue    epoch= 80 train_CE=0.052257 val_CE=0.102255
+moe_continue       epoch=  0 train_CE=0.180987 val_CE=0.189197
+moe_continue       epoch= 20 train_CE=0.069980 val_CE=0.119756
+moe_continue       epoch= 40 train_CE=0.035739 val_CE=0.101275
+moe_continue       epoch= 60 train_CE=0.023397 val_CE=0.096885
+moe_continue       epoch= 80 train_CE=0.015767 val_CE=0.091521
+linear_mac_matched epoch=  0 train_CE=0.180987 val_CE=0.189197
+linear_mac_matched epoch= 20 train_CE=0.106209 val_CE=0.134865
+linear_mac_matched epoch= 40 train_CE=0.078996 val_CE=0.118390
+linear_mac_matched epoch= 60 train_CE=0.063118 val_CE=0.108952
+linear_mac_matched epoch= 80 train_CE=0.052257 val_CE=0.102255
+linear_mac_matched epoch=100 train_CE=0.044566 val_CE=0.099090
+linear_mac_matched epoch=120 train_CE=0.038496 val_CE=0.094555
+linear_mac_matched epoch=140 train_CE=0.033638 val_CE=0.093125
+linear_mac_matched epoch=160 train_CE=0.029640 val_CE=0.091570
+linear_mac_matched epoch=180 train_CE=0.026370 val_CE=0.089461
+linear_mac_matched epoch=192 train_CE=0.024631 val_CE=0.089126
+moe_no_balance     epoch=  0 train_CE=0.180987 val_CE=0.189197
+moe_no_balance     epoch= 20 train_CE=0.069259 val_CE=0.105859
+moe_no_balance     epoch= 40 train_CE=0.035039 val_CE=0.088037
+moe_no_balance     epoch= 60 train_CE=0.022788 val_CE=0.070350
+moe_no_balance     epoch= 80 train_CE=0.014099 val_CE=0.058491
+scratch_continue   epoch=  0 train_CE=0.110946 val_CE=0.143745
+scratch_continue   epoch= 20 train_CE=0.046243 val_CE=0.119985
+scratch_continue   epoch= 40 train_CE=0.024111 val_CE=0.108417
+scratch_continue   epoch= 60 train_CE=0.015685 val_CE=0.114668
+scratch_continue   epoch= 80 train_CE=0.011049 val_CE=0.107488
+
+=== Split 2028 / seed 43 ===
+linear_pretrain    epoch=  0 train_CE=2.296799 val_CE=2.297068
+linear_pretrain    epoch= 20 train_CE=0.181694 val_CE=0.187574
+scratch_pretrain   epoch=  0 train_CE=2.304826 val_CE=2.303764
+scratch_pretrain   epoch= 20 train_CE=0.123266 val_CE=0.159269
+linear_continue    epoch=  0 train_CE=0.181694 val_CE=0.187574
+linear_continue    epoch= 20 train_CE=0.106054 val_CE=0.134595
+linear_continue    epoch= 40 train_CE=0.078389 val_CE=0.117811
+linear_continue    epoch= 60 train_CE=0.062629 val_CE=0.108254
+linear_continue    epoch= 80 train_CE=0.051941 val_CE=0.101855
+moe_continue       epoch=  0 train_CE=0.181694 val_CE=0.187574
+moe_continue       epoch= 20 train_CE=0.067705 val_CE=0.100981
+moe_continue       epoch= 40 train_CE=0.035160 val_CE=0.078397
+moe_continue       epoch= 60 train_CE=0.021212 val_CE=0.069110
+moe_continue       epoch= 80 train_CE=0.013902 val_CE=0.068840
+linear_mac_matched epoch=  0 train_CE=0.181694 val_CE=0.187574
+linear_mac_matched epoch= 20 train_CE=0.106054 val_CE=0.134595
+linear_mac_matched epoch= 40 train_CE=0.078389 val_CE=0.117811
+linear_mac_matched epoch= 60 train_CE=0.062629 val_CE=0.108254
+linear_mac_matched epoch= 80 train_CE=0.051941 val_CE=0.101855
+linear_mac_matched epoch=100 train_CE=0.044337 val_CE=0.098096
+linear_mac_matched epoch=120 train_CE=0.038112 val_CE=0.095109
+linear_mac_matched epoch=140 train_CE=0.033447 val_CE=0.093175
+linear_mac_matched epoch=160 train_CE=0.029493 val_CE=0.090631
+linear_mac_matched epoch=180 train_CE=0.026146 val_CE=0.088580
+linear_mac_matched epoch=192 train_CE=0.024518 val_CE=0.088970
+moe_no_balance     epoch=  0 train_CE=0.181694 val_CE=0.187574
+moe_no_balance     epoch= 20 train_CE=0.068867 val_CE=0.104678
+moe_no_balance     epoch= 40 train_CE=0.036993 val_CE=0.090423
+moe_no_balance     epoch= 60 train_CE=0.022323 val_CE=0.079544
+moe_no_balance     epoch= 80 train_CE=0.014213 val_CE=0.071811
+scratch_continue   epoch=  0 train_CE=0.123266 val_CE=0.159269
+scratch_continue   epoch= 20 train_CE=0.061534 val_CE=0.124648
+scratch_continue   epoch= 40 train_CE=0.038055 val_CE=0.092819
+scratch_continue   epoch= 60 train_CE=0.025024 val_CE=0.086578
+scratch_continue   epoch= 80 train_CE=0.018551 val_CE=0.094454
+
+=== Split 2028 / seed 44 ===
+linear_pretrain    epoch=  0 train_CE=2.307851 val_CE=2.306890
+linear_pretrain    epoch= 20 train_CE=0.181842 val_CE=0.187644
+scratch_pretrain   epoch=  0 train_CE=2.299612 val_CE=2.300044
+scratch_pretrain   epoch= 20 train_CE=0.119319 val_CE=0.178422
+linear_continue    epoch=  0 train_CE=0.181842 val_CE=0.187644
+linear_continue    epoch= 20 train_CE=0.105966 val_CE=0.134107
+linear_continue    epoch= 40 train_CE=0.078784 val_CE=0.117965
+linear_continue    epoch= 60 train_CE=0.063101 val_CE=0.108253
+linear_continue    epoch= 80 train_CE=0.052380 val_CE=0.102607
+moe_continue       epoch=  0 train_CE=0.181842 val_CE=0.187644
+moe_continue       epoch= 20 train_CE=0.068142 val_CE=0.107358
+moe_continue       epoch= 40 train_CE=0.035871 val_CE=0.093798
+moe_continue       epoch= 60 train_CE=0.021210 val_CE=0.081247
+moe_continue       epoch= 80 train_CE=0.014650 val_CE=0.078197
+linear_mac_matched epoch=  0 train_CE=0.181842 val_CE=0.187644
+linear_mac_matched epoch= 20 train_CE=0.105966 val_CE=0.134107
+linear_mac_matched epoch= 40 train_CE=0.078784 val_CE=0.117965
+linear_mac_matched epoch= 60 train_CE=0.063101 val_CE=0.108253
+linear_mac_matched epoch= 80 train_CE=0.052380 val_CE=0.102607
+linear_mac_matched epoch=100 train_CE=0.044529 val_CE=0.098434
+linear_mac_matched epoch=120 train_CE=0.038663 val_CE=0.096008
+linear_mac_matched epoch=140 train_CE=0.033672 val_CE=0.093313
+linear_mac_matched epoch=160 train_CE=0.029723 val_CE=0.091244
+linear_mac_matched epoch=180 train_CE=0.026467 val_CE=0.089393
+linear_mac_matched epoch=192 train_CE=0.024678 val_CE=0.089626
+moe_no_balance     epoch=  0 train_CE=0.181842 val_CE=0.187644
+moe_no_balance     epoch= 20 train_CE=0.071860 val_CE=0.105918
+moe_no_balance     epoch= 40 train_CE=0.039414 val_CE=0.074175
+moe_no_balance     epoch= 60 train_CE=0.026270 val_CE=0.066832
+moe_no_balance     epoch= 80 train_CE=0.014849 val_CE=0.064468
+scratch_continue   epoch=  0 train_CE=0.119319 val_CE=0.178422
+scratch_continue   epoch= 20 train_CE=0.058034 val_CE=0.126281
+scratch_continue   epoch= 40 train_CE=0.032018 val_CE=0.104601
+scratch_continue   epoch= 60 train_CE=0.019557 val_CE=0.095456
+scratch_continue   epoch= 80 train_CE=0.012786 val_CE=0.087316
+
+=== Split 2028 / seed 45 ===
+linear_pretrain    epoch=  0 train_CE=2.307415 val_CE=2.307330
+linear_pretrain    epoch= 20 train_CE=0.180968 val_CE=0.188570
+scratch_pretrain   epoch=  0 train_CE=2.300008 val_CE=2.300434
+scratch_pretrain   epoch= 20 train_CE=0.116739 val_CE=0.146530
+linear_continue    epoch=  0 train_CE=0.180968 val_CE=0.188570
+linear_continue    epoch= 20 train_CE=0.106259 val_CE=0.133591
+linear_continue    epoch= 40 train_CE=0.078972 val_CE=0.117684
+linear_continue    epoch= 60 train_CE=0.062919 val_CE=0.108356
+linear_continue    epoch= 80 train_CE=0.052227 val_CE=0.102651
+moe_continue       epoch=  0 train_CE=0.180968 val_CE=0.188570
+moe_continue       epoch= 20 train_CE=0.064692 val_CE=0.098570
+moe_continue       epoch= 40 train_CE=0.034114 val_CE=0.082776
+moe_continue       epoch= 60 train_CE=0.020672 val_CE=0.086678
+moe_continue       epoch= 80 train_CE=0.013776 val_CE=0.090330
+linear_mac_matched epoch=  0 train_CE=0.180968 val_CE=0.188570
+linear_mac_matched epoch= 20 train_CE=0.106259 val_CE=0.133591
+linear_mac_matched epoch= 40 train_CE=0.078972 val_CE=0.117684
+linear_mac_matched epoch= 60 train_CE=0.062919 val_CE=0.108356
+linear_mac_matched epoch= 80 train_CE=0.052227 val_CE=0.102651
+linear_mac_matched epoch=100 train_CE=0.044327 val_CE=0.097590
+linear_mac_matched epoch=120 train_CE=0.038336 val_CE=0.095355
+linear_mac_matched epoch=140 train_CE=0.033538 val_CE=0.092780
+linear_mac_matched epoch=160 train_CE=0.029640 val_CE=0.090815
+linear_mac_matched epoch=180 train_CE=0.026436 val_CE=0.088967
+linear_mac_matched epoch=192 train_CE=0.024641 val_CE=0.089171
+moe_no_balance     epoch=  0 train_CE=0.180968 val_CE=0.188570
+moe_no_balance     epoch= 20 train_CE=0.077676 val_CE=0.114216
+moe_no_balance     epoch= 40 train_CE=0.044285 val_CE=0.090324
+moe_no_balance     epoch= 60 train_CE=0.027195 val_CE=0.069794
+moe_no_balance     epoch= 80 train_CE=0.017419 val_CE=0.078286
+scratch_continue   epoch=  0 train_CE=0.116739 val_CE=0.146530
+scratch_continue   epoch= 20 train_CE=0.049419 val_CE=0.109450
+scratch_continue   epoch= 40 train_CE=0.030810 val_CE=0.104691
+scratch_continue   epoch= 60 train_CE=0.018392 val_CE=0.095086
+scratch_continue   epoch= 80 train_CE=0.016532 val_CE=0.088083
+
+=== Split 2028 / seed 46 ===
+linear_pretrain    epoch=  0 train_CE=2.310649 val_CE=2.310018
+linear_pretrain    epoch= 20 train_CE=0.181243 val_CE=0.188137
+scratch_pretrain   epoch=  0 train_CE=2.305136 val_CE=2.304390
+scratch_pretrain   epoch= 20 train_CE=0.114182 val_CE=0.145915
+linear_continue    epoch=  0 train_CE=0.181243 val_CE=0.188137
+linear_continue    epoch= 20 train_CE=0.106605 val_CE=0.133335
+linear_continue    epoch= 40 train_CE=0.079295 val_CE=0.117600
+linear_continue    epoch= 60 train_CE=0.063410 val_CE=0.108231
+linear_continue    epoch= 80 train_CE=0.052566 val_CE=0.101873
+moe_continue       epoch=  0 train_CE=0.181243 val_CE=0.188137
+moe_continue       epoch= 20 train_CE=0.064721 val_CE=0.106115
+moe_continue       epoch= 40 train_CE=0.035332 val_CE=0.080867
+moe_continue       epoch= 60 train_CE=0.024185 val_CE=0.063176
+moe_continue       epoch= 80 train_CE=0.013758 val_CE=0.066522
+linear_mac_matched epoch=  0 train_CE=0.181243 val_CE=0.188137
+linear_mac_matched epoch= 20 train_CE=0.106605 val_CE=0.133335
+linear_mac_matched epoch= 40 train_CE=0.079295 val_CE=0.117600
+linear_mac_matched epoch= 60 train_CE=0.063410 val_CE=0.108231
+linear_mac_matched epoch= 80 train_CE=0.052566 val_CE=0.101873
+linear_mac_matched epoch=100 train_CE=0.044663 val_CE=0.097641
+linear_mac_matched epoch=120 train_CE=0.038592 val_CE=0.094473
+linear_mac_matched epoch=140 train_CE=0.033767 val_CE=0.092240
+linear_mac_matched epoch=160 train_CE=0.029875 val_CE=0.090848
+linear_mac_matched epoch=180 train_CE=0.026545 val_CE=0.089666
+linear_mac_matched epoch=192 train_CE=0.024748 val_CE=0.088307
+moe_no_balance     epoch=  0 train_CE=0.181243 val_CE=0.188137
+moe_no_balance     epoch= 20 train_CE=0.073507 val_CE=0.106016
+moe_no_balance     epoch= 40 train_CE=0.040977 val_CE=0.078958
+moe_no_balance     epoch= 60 train_CE=0.026068 val_CE=0.068327
+moe_no_balance     epoch= 80 train_CE=0.018032 val_CE=0.063685
+scratch_continue   epoch=  0 train_CE=0.114182 val_CE=0.145915
+scratch_continue   epoch= 20 train_CE=0.047144 val_CE=0.121264
+scratch_continue   epoch= 40 train_CE=0.028556 val_CE=0.093514
+scratch_continue   epoch= 60 train_CE=0.017326 val_CE=0.083869
+scratch_continue   epoch= 80 train_CE=0.010352 val_CE=0.076830
+
+All runs passed loss-decrease and conversion assertions.

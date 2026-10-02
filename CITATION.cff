@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this educational experiment, cite the repository."
+title: "Linear Becomes Experts: A Reproducible Linear-to-MoE Experiment"
+type: software
+authors:
+  - name: "JoeIndyGit"
+version: "2.0.0"
+date-released: "2026-10-02"
+repository-code: "https://github.com/JoeIndyGit/14-Linear-to-MoE"
+abstract: >-
+  A NumPy affine digit classifier is trained and upcycled into four independent
+  experts with top-2 routing. Fifteen paired cases across five initialization
+  seeds and three stratified splits verify continued loss reduction, with
+  equal-step and projection-budget linear controls, a scratch MoE, a balancing
+  ablation, routing diagnostics, resumable checkpoints and a real Jupyter notebook.

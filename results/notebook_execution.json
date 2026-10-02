@@ -1,0 +1,5 @@
+{
+  "executor": "nbclient",
+  "execution_status": "pending",
+  "note": "Initial GitHub Actions run will generate fresh Jupyter outputs."
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="title desc">
+  <title id="title">Linear Becomes Experts</title>
+  <desc id="desc">Train a linear classifier, copy its learned weights into four experts, and continue learning with top-2 routing.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111c30"/><stop offset="1" stop-color="#172b43"/></linearGradient></defs>
+  <rect width="1280" height="400" rx="24" fill="url(#bg)"/>
+  <path d="M40 330H1240" stroke="#ffffff" stroke-opacity=".12"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="56" y="61" fill="#69d9c4" font-size="14" font-weight="700" letter-spacing="2">AN EXECUTED MACHINE LEARNING EXPERIMENT</text>
+    <text x="56" y="134" fill="#f5f8fc" font-size="50" font-weight="700">Linear Becomes</text>
+    <text x="56" y="197" fill="#f5f8fc" font-size="50" font-weight="700">Experts</text>
+    <text x="58" y="247" fill="#b7c5d8" font-size="21">Train. Convert. Keep learning.</text>
+    <text x="58" y="288" fill="#8094b0" font-size="15">Copied weights · Sparse routing · Verified loss reduction</text>
+    <g stroke="#67c8cd" stroke-width="2.5" fill="none">
+      <path d="M815 150H885M885 150V74H954M885 150V126H954M885 150V178H954M885 150V230H954"/>
+      <path d="M1068 74H1100V150H1147M1068 126H1100M1068 178H1100M1068 230H1100V150"/>
+    </g>
+    <rect x="664" y="117" width="151" height="66" rx="12" fill="#23374f" stroke="#80a7ff"/>
+    <text x="739" y="144" text-anchor="middle" fill="#eef4ff" font-size="16" font-weight="700">Trained linear</text>
+    <text x="739" y="166" text-anchor="middle" fill="#aebed4" font-size="13">650 parameters</text>
+    <g fill="#233c4c" stroke="#5ad6bf">
+      <rect x="954" y="54" width="114" height="40" rx="9"/><rect x="954" y="106" width="114" height="40" rx="9"/>
+      <rect x="954" y="158" width="114" height="40" rx="9"/><rect x="954" y="210" width="114" height="40" rx="9"/>
+    </g>
+    <g fill="#d4fff5" font-size="14" text-anchor="middle">
+      <text x="1011" y="80">Expert 1</text><text x="1011" y="132">Expert 2</text>
+      <text x="1011" y="184">Expert 3</text><text x="1011" y="236">Expert 4</text>
+    </g>
+    <rect x="1147" y="130" width="91" height="40" rx="9" fill="#253e50" stroke="#80a7ff"/>
+    <text x="1192" y="156" fill="#eef4ff" font-size="14" text-anchor="middle">Top-2 mix</text>
+    <text x="1011" y="290" fill="#8fa9c1" font-size="14" text-anchor="middle">4 independent copies · 2 selected per image</text>
+    <text x="56" y="369" fill="#c7d6e8" font-size="16">NUMPY + CPU</text>
+    <text x="445" y="369" fill="#c7d6e8" font-size="16">15 PAIRED RUNS</text>
+    <text x="869" y="369" fill="#c7d6e8" font-size="16">CHECKPOINTS + RAW LOGS</text>
+  </g>
+</svg>

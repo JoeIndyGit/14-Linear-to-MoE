@@ -1,0 +1,22 @@
+{
+  "linear_gradient": {
+    "parameters_checked": 15,
+    "max_scaled_error": 2.3129737014571106e-10
+  },
+  "moe_task_gradient": {
+    "parameters_checked": 80,
+    "max_scaled_error": 2.2703489956088507e-10
+  },
+  "moe_task_plus_balance_gradient": {
+    "parameters_checked": 80,
+    "max_scaled_error": 2.1612779968482876e-10
+  },
+  "conversion_max_abs_error": 6.938893903907228e-18,
+  "sparse_dispatch_reference": "passed",
+  "normalized_top2_weights": "passed",
+  "independent_expert_storage": "passed",
+  "checkpoint_exact_next_step": "passed",
+  "copied_experts_initial_task_router_gradient_l2": 1.9667092457865086e-19,
+  "scratch_experts_independently_initialized": "passed",
+  "numerical_tolerance_accepts_roundoff_rejects_material_change": "passed"
+}

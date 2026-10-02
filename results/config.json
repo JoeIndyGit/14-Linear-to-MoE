@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "split_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "pretrain_epochs": 20,
+  "continuation_epochs": 80,
+  "batch_size": 64,
+  "pretrain_lr": 0.01,
+  "continuation_lr": 0.005,
+  "router_lr": 0.002,
+  "balance_alpha": 0.01,
+  "experts": 4,
+  "top_k": 2,
+  "dtype": "float64",
+  "device": "CPU",
+  "blas_threads": 1,
+  "split_counts": {
+    "train": 1078,
+    "val": 359,
+    "test": 360
+  },
+  "dataset_sha256": "5889d26819cf830d070975af3c711419825fa0a078137b3d80b8e7d06bd58da0",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scikit_learn": "1.8.0",
+  "hardware": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "cpu_count": 9,
+  "note": "Fixed final epochs; no checkpoint selection or test tuning. Adam resets after pretraining in every branch. Projection MAC budget excludes backward, optimizer, gating, sorting and mixing. Splits overlap; variation is descriptive."
+}
