@@ -1,0 +1,16 @@
+Workflow: https://github.com/JoeIndyGit/14-Linear-to-MoE/actions/runs/37035611121
+Source commit: 7b45322e64865829ccb7c1524d1c93f7162e56f9
+Conclusion: success
+
+2026-10-02T16:42:32.8495147Z Fresh Jupyter notebook reproduced every script result within rtol=1e-6, atol=1e-8 (runtime excluded).
+2026-10-02T16:43:12.7046652Z PASS: 191 file-integrity checks.
+2026-10-02T16:43:12.7047407Z PASS: 45 local documentation links.
+2026-10-02T16:43:12.7048369Z PASS: saved notebook execution: {'executed_cells': 11, 'embedded_figures': 5}
+2026-10-02T16:43:12.7051416Z PASS: numerical gradients, sparse dispatch, exact resumption and tolerance regression. {'linear_gradient': {'parameters_checked': 15, 'max_scaled_error': 2.3129737014571106e-10}, 'moe_task_gradient': {'parameters_checked': 80, 'max_scaled_error': 2.2703489956088507e-10}, 'moe_task_plus_balance_gradient': {'parameters_checked': 80, 'max_scaled_error': 2.1612779968482876e-10}, 'conversion_max_abs_error': 6.938893903907228e-18, 'sparse_dispatch_reference': 'passed', 'normalized_top2_weights': 'passed', 'independent_expert_storage': 'passed', 'checkpoint_exact_next_step': 'passed', 'copied_experts_initial_task_router_gradient_l2': 1.9667092457865086e-19, 'scratch_experts_independently_initialized': 'passed', 'numerical_tolerance_accepts_roundoff_rejects_material_change': 'passed'}
+2026-10-02T16:43:12.7055502Z PASS: 15 cases: checkpoints, data splits, every branch, raw CSVs, routing, budgets and aggregates.
+2026-10-02T16:43:12.7056216Z All runs passed loss-decrease and conversion assertions.
+2026-10-02T16:43:15.5807091Z PASS: fresh script reproduction of 15 cases and all five branches.
+2026-10-02T16:43:15.5807982Z All runs passed loss-decrease and conversion assertions.
+2026-10-02T16:44:01.6435399Z PASS: singleton plots with zero SD and no numerical warnings.
+2026-10-02T16:44:01.6437079Z PASS: fresh Jupyter kernel executed every notebook cell and reproduced all results.
+2026-10-02T16:44:01.6437840Z Submission verification complete.

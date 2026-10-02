@@ -1,5 +1,19 @@
 {
   "executor": "nbclient",
-  "execution_status": "pending",
-  "note": "Initial GitHub Actions run will generate fresh Jupyter outputs."
+  "nbclient": "0.11.0",
+  "nbformat": "5.11.1",
+  "ipykernel": "7.4.0",
+  "fresh_kernel": true,
+  "empty_working_directory": true,
+  "schema_validation": "passed",
+  "script_result_comparison": "passed",
+  "rtol": 1e-06,
+  "atol": 1e-08,
+  "timing_metrics_excluded": true,
+  "code_cells": 11,
+  "embedded_pngs": 5,
+  "execution_environment": "GitHub Actions",
+  "source_commit": "7b45322e64865829ccb7c1524d1c93f7162e56f9",
+  "workflow_run": "https://github.com/JoeIndyGit/14-Linear-to-MoE/actions/runs/37035611121",
+  "workflow_conclusion": "success"
 }

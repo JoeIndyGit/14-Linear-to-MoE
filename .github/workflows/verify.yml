@@ -3,6 +3,7 @@ name: Verify submission
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -24,26 +25,7 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-      - name: Install pinned dependencies
+      - name: Install pinned training and notebook dependencies
         run: python -m pip install -r requirements-dev.txt
-      - name: Generate actual Jupyter outputs and measured documentation
-        run: python build_artifacts.py
-      - name: Refresh checksums for generated notebook outputs
-        run: python scripts/update_manifest.py
-      - name: Verify and reproduce every branch and singleton plots
+      - name: Audit evidence, reproduce all cases, test singleton plots and execute notebook
         run: python check_submission.py --reproduce --check-singleton --execute-notebook
-      - name: Retain executed notebook and generated report
-        uses: actions/upload-artifact@v7
-        with:
-          name: executed-submission
-          path: |
-            linear_to_moe.ipynb
-            README.md
-            SUBMISSION.md
-            docs/EXPERIMENT.md
-            requirements.txt
-            requirements-dev.txt
-            results/notebook_execution.json
-            results/verification.json
-            results/comparison.csv
-          if-no-files-found: error

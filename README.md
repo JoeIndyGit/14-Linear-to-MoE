@@ -1,5 +1,3 @@
-> **Notebook validation pending:** the initial CI run will generate and check its Jupyter outputs. Script results below are already measured.
-
 <p align="center"><img src="assets/hero.svg" alt="Linear Becomes Experts — train, convert, keep learning" width="100%"></p>
 
 # Linear Becomes Experts
@@ -9,7 +7,7 @@
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JoeIndyGit/14-Linear-to-MoE/blob/main/linear_to_moe.ipynb)
 [![Verify submission](https://github.com/JoeIndyGit/14-Linear-to-MoE/actions/workflows/verify.yml/badge.svg)](https://github.com/JoeIndyGit/14-Linear-to-MoE/actions/workflows/verify.yml)
 
-[Notebook source](linear_to_moe.ipynb) · [Full report](docs/EXPERIMENT.md) · [Reviewer guide](docs/REVIEWER_GUIDE.md) · [Raw comparisons](results/comparison.csv)
+[Executed notebook](linear_to_moe.ipynb) · [Full report](docs/EXPERIMENT.md) · [Reviewer guide](docs/REVIEWER_GUIDE.md) · [Raw comparisons](results/comparison.csv)
 
 ## The measured result
 
@@ -67,7 +65,7 @@ python -m pip install -r requirements-dev.txt
 python check_submission.py --reproduce --check-singleton --execute-notebook
 ```
 
-Windows activation: `.venv\\Scripts\\activate`.
+Windows activation: `.venv\Scripts\activate`.
 For a separate experiment, preserving the submitted evidence:
 
 ```bash
@@ -82,8 +80,8 @@ python train.py --out runs/quick --seeds 42 --split-seeds 2026
 ```
 
 The standalone notebook embeds all code. Open in Colab/Jupyter and **Run all**.
-Fresh Jupyter notebook execution is pending in CI. Its cells include a
-checkpoint reload and ten-epoch continuation check.
+Saved notebook outputs were executed by **a fresh Jupyter kernel**, not an
+emulated executor. It also reloads a final checkpoint and trains ten more epochs.
 No GPU, API key or dataset download is needed once dependencies are installed.
 
 Verification independently checks checkpoint metrics, exact data splits, raw

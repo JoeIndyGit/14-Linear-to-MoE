@@ -9,6 +9,7 @@ import argparse
 import hashlib
 import importlib.metadata
 import json
+import os
 from pathlib import Path
 import re
 import shutil
@@ -201,6 +202,11 @@ from actual executed training and numerical verification.
         "code_cells": sum(c.cell_type == "code" for c in nb.cells),
         "embedded_pngs": sum("image/png" in o.get("data", {}) for c in nb.cells
                              if c.cell_type == "code" for o in c.outputs)}
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        info.update(execution_environment="GitHub Actions", source_commit=os.environ.get("GITHUB_SHA"),
+            workflow_run=f"https://github.com/{os.environ.get('GITHUB_REPOSITORY')}/actions/runs/{os.environ.get('GITHUB_RUN_ID')}")
+    else:
+        info["execution_environment"] = "local Jupyter"
     (ROOT / "results/notebook_execution.json").write_text(json.dumps(info, indent=2) + "\n")
     print("Fresh Jupyter notebook reproduced every script result within rtol=1e-6, atol=1e-8 (runtime excluded).", flush=True)
 
@@ -312,6 +318,7 @@ Parameter entries are capacity counts, not FLOPs or a speed measurement.
 
 {stage_table}
 Mean ± sample SD over {n} cases. CE is in nats and excludes balancing.
+Accuracy standard deviations are in percentage points.
 From conversion to the final MoE, mean train CE falls **{drop_train:.2f}%** and
 mean validation CE falls **{drop_val:.2f}%**. These are endpoint reductions;
 individual epoch curves can fluctuate.
@@ -492,7 +499,7 @@ python -m pip install -r requirements-dev.txt
 python check_submission.py --reproduce --check-singleton --execute-notebook
 ```
 
-Windows activation: `.venv\\Scripts\\activate`.
+Windows activation: `.venv\Scripts\activate`.
 For a separate experiment, preserving the submitted evidence:
 
 ```bash
@@ -647,4 +654,4 @@ if __name__ == "__main__":
         text = text.replace("Saved notebook outputs were executed by **a fresh Jupyter kernel**, not an\nemulated executor. It also reloads a final checkpoint and trains ten more epochs.",
             "Fresh Jupyter notebook execution is pending in CI. Its cells include a\ncheckpoint reload and ten-epoch continuation check.")
         path.write_text("> **Notebook validation pending:** the initial CI run will generate and check its Jupyter outputs. Script results below are already measured.\n\n" + text)
-    print("Executed notebook and measured documentation saved.")
+    print("Notebook and measured documentation saved.")

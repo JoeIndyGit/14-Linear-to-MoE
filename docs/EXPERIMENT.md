@@ -74,6 +74,7 @@ Parameter entries are capacity counts, not FLOPs or a speed measurement.
 | Upcycled MoE | 0.012547 ± 0.001818 | 0.099832 ± 0.026355 |
 
 Mean ± sample SD over 15 cases. CE is in nats and excludes balancing.
+Accuracy standard deviations are in percentage points.
 From conversion to the final MoE, mean train CE falls **92.73%** and
 mean validation CE falls **55.08%**. These are endpoint reductions;
 individual epoch curves can fluctuate.
