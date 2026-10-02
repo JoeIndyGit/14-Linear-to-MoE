@@ -2,12 +2,12 @@
 
 # Linear Becomes Experts
 
-**Train a literal linear model. Upcycle its learned weights into a sparse MoE. Prove that training continues.**
+**Train a literal linear model. Upcycle its learned weights into a sparse MoE. Measure continued learning.**
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JoeIndyGit/14-Linear-to-MoE/blob/main/linear_to_moe.ipynb)
 [![Verify submission](https://github.com/JoeIndyGit/14-Linear-to-MoE/actions/workflows/verify.yml/badge.svg)](https://github.com/JoeIndyGit/14-Linear-to-MoE/actions/workflows/verify.yml)
 
-[Executed notebook](linear_to_moe.ipynb) · [Full report](docs/EXPERIMENT.md) · [Reviewer guide](docs/REVIEWER_GUIDE.md) · [Raw comparisons](results/comparison.csv)
+[Executed notebook](linear_to_moe.ipynb) · [Full report](docs/EXPERIMENT.md) · [Reproducibility guide](docs/REPRODUCIBILITY.md) · [Raw comparisons](results/comparison.csv)
 
 ## The measured result
 
@@ -27,11 +27,11 @@ training reduces both train and validation loss in **all 15 cases** across
 Mean ± sample SD; cross-entropy in nats. After conversion, mean training loss
 falls **92.73%** and validation loss falls **55.08%**. Final mean MoE test
 accuracy is **97.28%**. This is a small digit-classification
-assignment with descriptive variation across overlapping splits.
+experiment with descriptive variation across overlapping splits.
 
 ![Measured learning curves](results/loss_curves.png)
 
-## Stronger comparisons
+## Baseline comparisons
 
 | Final branch | Total epochs | Train CE | Validation CE | Test CE | Test accuracy |
 |---|---:|---:|---:|---:|---:|
@@ -52,7 +52,7 @@ in **15/15** cases. Accuracy gains vary by seed and split;
 balancing does not consistently improve held-out results. The [full report](docs/EXPERIMENT.md)
 includes every paired delta, split mean, budget and unfavorable ablation result.
 
-![Stronger baselines](results/baseline_comparison.png)
+![Baseline comparisons](results/baseline_comparison.png)
 
 ## Run and verify
 
@@ -155,7 +155,7 @@ local to each run, and routing patterns are not treated as semantic labels.
 | [build_artifacts.py](build_artifacts.py) | Fresh-kernel notebook execution and measured documentation |
 | [results/](results/) | Logs, per-epoch CSVs, all checkpoints, split indices and routing diagnostics |
 | [docs/EXPERIMENT.md](docs/EXPERIMENT.md) | Method, all cases, paired comparisons, budgets and limitations |
-| [docs/REVIEWER_GUIDE.md](docs/REVIEWER_GUIDE.md) | Assignment requirements mapped to evidence |
+| [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) | Reproduction commands and saved-result navigation |
 | [.github/workflows/verify.yml](.github/workflows/verify.yml) | Automated full verification |
 | [MANIFEST.sha256](MANIFEST.sha256) | Submission file checksums |
 
@@ -164,7 +164,7 @@ local to each run, and routing patterns are not treated as semantic labels.
 This demonstrates affine-model upcycling and continued learning on one small
 real dataset. It does not establish language-model scaling, inference speedup
 or universal MoE superiority. More datasets and a capacity-matched nonlinear
-dense control would strengthen a research claim beyond this assignment.
+dense control would broaden the experimental evidence.
 
 References: [digits](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html),
 [Sparse Upcycling](https://arxiv.org/abs/2212.05055),

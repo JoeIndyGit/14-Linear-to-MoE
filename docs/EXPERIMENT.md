@@ -1,9 +1,9 @@
 # Experiment report
 
-The assignment asks for a trained linear model, conversion into an MoE, and
-proof of continued loss reduction. **All 15 paired cases pass all three stages**:
-linear pretraining reduces loss, conversion preserves predictions, and MoE
-continuation reduces both training and validation loss.
+This experiment trains a literal affine classifier, copies its learned weights
+into a sparse MoE, and measures continued learning. Across all **15 paired
+cases**, linear pretraining lowers loss, conversion preserves predictions,
+and MoE continuation lowers both training and validation cross-entropy.
 
 ## Protocol
 
@@ -27,7 +27,7 @@ shuffle seed. The scratch MoE has independent random experts and receives the
 same 20 + 80 epoch schedule, including its Adam reset.
 No learning rate or stopping rule was selected using the new test results.
 The three new split definitions and all seeds were chosen before this expanded
-suite. The earlier assignment used split 2026 and seeds 42–44; this expansion
+suite. The pilot experiment used split 2026 and seeds 42–44; this expansion
 is an audit extension, not a claim of wholly unseen experimental design.
 Test labels are evaluated only at fixed-final checkpoints. Conversion checks
 use all images without labels; router heatmaps use validation labels.
@@ -160,7 +160,7 @@ prove that an expert represents a human-interpretable concept.
 ![Expert participation](../results/expert_routing.png)
 ![Class routing, entropy and gradients](../results/router_diagnostics.png)
 
-## Every assignment case
+## Results for every case
 
 | Split / seed | Pretrained train CE | MoE final train CE | Pretrained val CE | MoE final val CE | Linear test accuracy | MoE test accuracy |
 |---|---:|---:|---:|---:|---:|---:|
@@ -219,7 +219,7 @@ rows, optimizer, rng = train_phase(model, get_data(meta["split_seed"]),
 
 The stored optimizer and RNG preserve the next update exactly on the same
 numerical runtime. A new learning rate can be chosen for further exploration,
-but should be reported separately from this fixed assignment protocol.
+but should be reported separately from this fixed experimental protocol.
 
 ## Limitations and references
 
@@ -229,7 +229,7 @@ on a new dataset nor large-model behavior is established. The projection
 budget omits several operations, top-k derivatives are local to fixed sets,
 and the baseline hyperparameters have not been exhaustively optimized.
 A capacity-matched dense nonlinear model and another dataset would strengthen
-future research, but are outside this literal-linear assignment demonstration.
+future research and are potential extensions to this experiment.
 
 - [scikit-learn digits dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html)
 - [Komatsuzaki et al., Sparse Upcycling](https://arxiv.org/abs/2212.05055)

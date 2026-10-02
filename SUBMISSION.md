@@ -22,9 +22,9 @@ linear controls, a scratch MoE, a balancing ablation, class routing/entropy
 and gradient diagnostics, and automated verification. Accuracy advantages
 vary, and all baselines and unfavorable outcomes are retained.
 
-## Review entry points
+## Project entry points
 
-1. [Reviewer guide](docs/REVIEWER_GUIDE.md)
+1. [Reproducibility guide](docs/REPRODUCIBILITY.md)
 2. [Executed notebook](linear_to_moe.ipynb)
 3. [Full report](docs/EXPERIMENT.md)
 4. [Raw comparison CSV](results/comparison.csv)

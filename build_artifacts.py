@@ -50,7 +50,7 @@ def build_notebook(execute=True):
 
     md(f"""# Linear Becomes Experts
 
-**An executed, reproducible linear → sparse MoE assignment**
+**An executed, reproducible linear → sparse MoE experiment**
 
 Train a literal affine classifier on handwritten digits, copy its learned
 weights into independent experts, then show that learning continues.
@@ -155,8 +155,8 @@ print("All checks passed.")
     md("""## Interpretation and limits
 
 The linear model learns, conversion preserves its predictions, and the
-upcycled MoE keeps reducing training and validation loss. Stronger baselines
-show that the accuracy advantage varies by case and budget. The balancing
+upcycled MoE keeps reducing training and validation loss. The baseline
+comparisons show that the accuracy advantage varies by case and budget. The balancing
 ablation does not consistently improve held-out performance; keep its full
 results rather than assuming that balancing must help.
 
@@ -285,10 +285,10 @@ Finite differences test both task and combined objectives away from ties.
 """
     report = f"""# Experiment report
 
-The assignment asks for a trained linear model, conversion into an MoE, and
-proof of continued loss reduction. **All {n} paired cases pass all three stages**:
-linear pretraining reduces loss, conversion preserves predictions, and MoE
-continuation reduces both training and validation loss.
+This experiment trains a literal affine classifier, copies its learned weights
+into a sparse MoE, and measures continued learning. Across all **{n} paired
+cases**, linear pretraining lowers loss, conversion preserves predictions,
+and MoE continuation lowers both training and validation cross-entropy.
 
 ## Protocol
 
@@ -298,7 +298,7 @@ shuffle seed. The scratch MoE has independent random experts and receives the
 same {cfg['pretrain_epochs']} + {cfg['continuation_epochs']} epoch schedule, including its Adam reset.
 No learning rate or stopping rule was selected using the new test results.
 The three new split definitions and all seeds were chosen before this expanded
-suite. The earlier assignment used split 2026 and seeds 42–44; this expansion
+suite. The pilot experiment used split 2026 and seeds 42–44; this expansion
 is an audit extension, not a claim of wholly unseen experimental design.
 Test labels are evaluated only at fixed-final checkpoints. Conversion checks
 use all images without labels; router heatmaps use validation labels.
@@ -379,7 +379,7 @@ prove that an expert represents a human-interpretable concept.
 ![Expert participation](../results/expert_routing.png)
 ![Class routing, entropy and gradients](../results/router_diagnostics.png)
 
-## Every assignment case
+## Results for every case
 
 {all_runs}
 Unrounded numbers and all five branches are in [comparison.csv](../results/comparison.csv)
@@ -421,7 +421,7 @@ rows, optimizer, rng = train_phase(model, get_data(meta["split_seed"]),
 
 The stored optimizer and RNG preserve the next update exactly on the same
 numerical runtime. A new learning rate can be chosen for further exploration,
-but should be reported separately from this fixed assignment protocol.
+but should be reported separately from this fixed experimental protocol.
 
 ## Limitations and references
 
@@ -431,7 +431,7 @@ on a new dataset nor large-model behavior is established. The projection
 budget omits several operations, top-k derivatives are local to fixed sets,
 and the baseline hyperparameters have not been exhaustively optimized.
 A capacity-matched dense nonlinear model and another dataset would strengthen
-future research, but are outside this literal-linear assignment demonstration.
+future research and are potential extensions to this experiment.
 
 - [scikit-learn digits dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html)
 - [Komatsuzaki et al., Sparse Upcycling](https://arxiv.org/abs/2212.05055)
@@ -449,12 +449,12 @@ numbers come from executed runs, saved checkpoints and numerical checks.
 
 # Linear Becomes Experts
 
-**Train a literal linear model. Upcycle its learned weights into a sparse MoE. Prove that training continues.**
+**Train a literal linear model. Upcycle its learned weights into a sparse MoE. Measure continued learning.**
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/{REPO}/blob/main/linear_to_moe.ipynb)
 [![Verify submission](https://github.com/{REPO}/actions/workflows/verify.yml/badge.svg)](https://github.com/{REPO}/actions/workflows/verify.yml)
 
-[Executed notebook](linear_to_moe.ipynb) · [Full report](docs/EXPERIMENT.md) · [Reviewer guide](docs/REVIEWER_GUIDE.md) · [Raw comparisons](results/comparison.csv)
+[Executed notebook](linear_to_moe.ipynb) · [Full report](docs/EXPERIMENT.md) · [Reproducibility guide](docs/REPRODUCIBILITY.md) · [Raw comparisons](results/comparison.csv)
 
 ## The measured result
 
@@ -468,11 +468,11 @@ training reduces both train and validation loss in **all {n} cases** across
 Mean ± sample SD; cross-entropy in nats. After conversion, mean training loss
 falls **{drop_train:.2f}%** and validation loss falls **{drop_val:.2f}%**. Final mean MoE test
 accuracy is **{100*a['moe_final_test']['accuracy']['mean']:.2f}%**. This is a small digit-classification
-assignment with descriptive variation across overlapping splits.
+experiment with descriptive variation across overlapping splits.
 
 ![Measured learning curves](results/loss_curves.png)
 
-## Stronger comparisons
+## Baseline comparisons
 
 {baseline_table}
 Every run includes equal-step linear continuation, a linear control with the
@@ -486,7 +486,7 @@ in **{a['paired_comparisons']['linear']['val_ce']['moe_better']}/{n}** cases. Ac
 balancing does not consistently improve held-out results. The [full report](docs/EXPERIMENT.md)
 includes every paired delta, split mean, budget and unfavorable ablation result.
 
-![Stronger baselines](results/baseline_comparison.png)
+![Baseline comparisons](results/baseline_comparison.png)
 
 ## Run and verify
 
@@ -575,7 +575,7 @@ local to each run, and routing patterns are not treated as semantic labels.
 | [build_artifacts.py](build_artifacts.py) | Fresh-kernel notebook execution and measured documentation |
 | [results/](results/) | Logs, per-epoch CSVs, all checkpoints, split indices and routing diagnostics |
 | [docs/EXPERIMENT.md](docs/EXPERIMENT.md) | Method, all cases, paired comparisons, budgets and limitations |
-| [docs/REVIEWER_GUIDE.md](docs/REVIEWER_GUIDE.md) | Assignment requirements mapped to evidence |
+| [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) | Reproduction commands and saved-result navigation |
 | [.github/workflows/verify.yml](.github/workflows/verify.yml) | Automated full verification |
 | [MANIFEST.sha256](MANIFEST.sha256) | Submission file checksums |
 
@@ -584,7 +584,7 @@ local to each run, and routing patterns are not treated as semantic labels.
 This demonstrates affine-model upcycling and continued learning on one small
 real dataset. It does not establish language-model scaling, inference speedup
 or universal MoE superiority. More datasets and a capacity-matched nonlinear
-dense control would strengthen a research claim beyond this assignment.
+dense control would broaden the experimental evidence.
 
 References: [digits](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html),
 [Sparse Upcycling](https://arxiv.org/abs/2212.05055),
@@ -617,9 +617,9 @@ linear controls, a scratch MoE, a balancing ablation, class routing/entropy
 and gradient diagnostics, and automated verification. Accuracy advantages
 vary, and all baselines and unfavorable outcomes are retained.
 
-## Review entry points
+## Project entry points
 
-1. [Reviewer guide](docs/REVIEWER_GUIDE.md)
+1. [Reproducibility guide](docs/REPRODUCIBILITY.md)
 2. [Executed notebook](linear_to_moe.ipynb)
 3. [Full report](docs/EXPERIMENT.md)
 4. [Raw comparison CSV](results/comparison.csv)
